@@ -1,0 +1,27 @@
+[project]
+name = "business-analysis-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Pelumi Adejuwon", email = "140279753+PELUMIADEJUWON@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "crewai>=1.15.35",
+    "crewai-tools[mcp]>=1.15.35",
+    "gradio>=6.31.0",
+    "litellm>=1.106.6",
+    "mcp>=1.30.0",
+    "pydantic-settings>=2.16.2",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "streamlit>=1.66.1",
+]
+
+[project.scripts]
+business-analysis-ai = "business_analysis_ai:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
